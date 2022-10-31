@@ -50,7 +50,10 @@ const bannerData = [
 const Banner = () => {
   return (
     <div className="carousel w-full">
-      <BannerItem image={img1} />
+      {bannerData.map((slide) => (
+        <BannerItem key={slide.id} slide={slide} />
+      ))}
+      {/* <BannerItem image={img1} /> */}
       {/* <div id="slide2" className="carousel-item relative w-full">
         <img src={img2} className="w-full" alt="img1" />
         <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
