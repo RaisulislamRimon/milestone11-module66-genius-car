@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../../assets/logo.svg";
 
 const Header = () => {
   return (
@@ -56,7 +57,9 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <Link className="btn btn-ghost normal-case text-xl">daisyUI</Link>
+        <Link className="btn btn-ghost normal-case text-xl">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
