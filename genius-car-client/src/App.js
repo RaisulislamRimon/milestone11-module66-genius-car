@@ -1,11 +1,12 @@
 import React from "react";
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
+import router from "./Router/Routes/Routes";
 
 const App = () => {
   return (
     <div>
-      <button className="btn btn-warning">btn 1</button>
-      <button className="btn btn-error">btn 2</button>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 };
