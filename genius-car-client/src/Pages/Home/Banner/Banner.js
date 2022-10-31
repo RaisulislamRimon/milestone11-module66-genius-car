@@ -19,7 +19,7 @@ const Banner = () => {
           </h1>
         </div>
         <div className="absolute flex justify-end transform -translate-y-1/2 w-2/5 left-24 top-1/2">
-          <p className="text-xl font-bold text-white">
+          <p className="text-xl text-white">
             There are many variations of passages of available, but the majority
             have suffered alteration in some form
           </p>
