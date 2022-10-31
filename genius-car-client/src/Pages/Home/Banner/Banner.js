@@ -11,7 +11,7 @@ const Banner = () => {
     <div className="carousel w-full">
       <div id="slide1" className="carousel-item relative w-full">
         <img src={img1} className="w-full" alt="img1" />
-        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 top-1/4">
+        <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/4">
           <h1 className="text-6xl font-bold text-white">
             Affordable <br />
             Price for <br />
