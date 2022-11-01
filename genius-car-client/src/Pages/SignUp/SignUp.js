@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import login from "../../assets/images/login/login.svg";
 
-const Login = () => {
-  const handleLogin = (e) => {
+const SignUp = () => {
+  const handleSignUp = (e) => {
     e.preventDefault();
   };
   return (
@@ -13,8 +13,8 @@ const Login = () => {
           <img src={login} className="w-3/4" alt="loginImg" />
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 my-20 py-20">
-          <form onSubmit={handleLogin} className="card-body">
-            <h1 className="text-5xl text-center font-semibold ">Login</h1>
+          <form onSubmit={handleSignUp} className="card-body">
+            <h1 className="text-5xl text-center font-semibold ">Sign Up</h1>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
@@ -34,24 +34,19 @@ const Login = () => {
                 placeholder="password"
                 className="input input-bordered"
               />
-              <label className="label">
-                <Link to="/" className="label-text-alt link link-hover">
-                  Forgot password?
-                </Link>
-              </label>
             </div>
             <div className="form-control mt-6">
               <input
                 type="submit"
-                value="Login"
+                value="Sign Up"
                 className=" btn border-none bg-orange-600"
               />
             </div>
           </form>
           <p className="text-center">
-            New to Genius Cart? {""}
-            <Link className="text-orange-600 font-bold" to="/signup">
-              Sign up
+            Already have an account? {""}
+            <Link className="text-orange-600 font-bold" to="/login">
+              Log in
             </Link>
           </p>
         </div>
@@ -60,4 +55,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
