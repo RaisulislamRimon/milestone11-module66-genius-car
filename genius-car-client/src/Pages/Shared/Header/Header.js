@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.svg";
+import { AuthContext } from "../../../contexts/AuthProvider/AuthProvider";
 
 const Header = () => {
   const menuItems = (
@@ -16,8 +17,12 @@ const Header = () => {
       </li>
     </>
   );
+
+  // const userInfo = useContext(AuthContext);
+
   return (
     <div className="navbar bg-base-100 h-20 mb-12 pt-12">
+      {/* {userInfo?.displayName} */}
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
