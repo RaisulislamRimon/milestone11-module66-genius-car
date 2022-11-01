@@ -12,7 +12,7 @@ const Login = () => {
         <div className="text-center lg:text-left">
           <img src={login} className="w-3/4" alt="loginImg" />
         </div>
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 my-20 py-20">
           <form onSubmit={handleLogin} className="card-body">
             <h1 className="text-5xl text-center font-semibold ">Login</h1>
             <div className="form-control">
@@ -44,6 +44,12 @@ const Login = () => {
               <input type="submit" value="Login" className="btn btn-primary" />
             </div>
           </form>
+          <p className="text-center">
+            New to Genius Cart? {""}
+            <Link className="text-orange-600 font-bold" to="/signup">
+              Sign up
+            </Link>
+          </p>
         </div>
       </div>
     </div>
