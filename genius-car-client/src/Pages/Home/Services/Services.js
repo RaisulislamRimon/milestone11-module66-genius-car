@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Services = () => {
+  const [services, setServices] = useState([]);
+  useEffect(() => {
+    fetch("services.json")
+      .then((response) => response.json())
+      .then((data) => setServices(data));
+  }, []);
   return (
     <div>
       <div className="text-center my-12">
@@ -10,6 +16,9 @@ const Services = () => {
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
         </p>
+      </div>
+      <div>
+        <h1>Services : {services.length}</h1>
       </div>
     </div>
   );
