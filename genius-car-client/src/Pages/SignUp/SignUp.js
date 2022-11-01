@@ -17,12 +17,25 @@ const SignUp = () => {
             <h1 className="text-5xl text-center font-semibold ">Sign Up</h1>
             <div className="form-control">
               <label className="label">
+                <span className="label-text">Your Name</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your name"
+                className="input input-bordered"
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
                 <span className="label-text">Email</span>
               </label>
               <input
                 type="text"
+                name="email"
                 placeholder="email"
                 className="input input-bordered"
+                required
               />
             </div>
             <div className="form-control">
@@ -31,8 +44,10 @@ const SignUp = () => {
               </label>
               <input
                 type="text"
+                name="password"
                 placeholder="password"
                 className="input input-bordered"
+                required
               />
             </div>
             <div className="form-control mt-6">
