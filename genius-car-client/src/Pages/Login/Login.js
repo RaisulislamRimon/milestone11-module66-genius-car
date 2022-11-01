@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import login from "../../assets/images/login/login.svg";
 
 const Login = () => {
+  const handleLogin = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className="hero w-full  my-20">
       <div className="hero-content grid gap-20 md:grid-cols-2 flex-col lg:flex-row">
@@ -10,7 +13,7 @@ const Login = () => {
           <img src={login} className="w-3/4" alt="loginImg" />
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form className="card-body">
+          <form onSubmit={handleLogin} className="card-body">
             <h1 className="text-5xl text-center font-semibold ">Login</h1>
             <div className="form-control">
               <label className="label">
